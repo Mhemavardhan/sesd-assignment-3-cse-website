@@ -5,7 +5,7 @@
 - **Course:** Software Engineering and System Design (24CS301PC311)
 - **Academic Year:** 2026–27 | **Regulation:** R24
 - **Student Name:** Mudavath Hemavardhan
-- **Hall Ticket Number:** 2403A51421
+- **Hall Ticket Number:** 2403A51422
 - **Institution:** SR University, Warangal / Hyderabad, Telangana
 
 ---
@@ -44,7 +44,7 @@ $ git init
 Initialized empty Git repository in sesd-assignment-3-cse-website/.git/
 
 $ git config user.name "Mudavath Hemavardhan"
-$ git config user.email "2403a51421@sru.edu.in"
+$ git config user.email "2403a51422@sru.edu.in"
 $ git branch -M main
 ```
 

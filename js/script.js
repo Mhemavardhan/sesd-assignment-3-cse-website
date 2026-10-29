@@ -1,7 +1,7 @@
 /**
  * Department of Computer Science & Engineering — Client-Side Scripts
  * Mobile Navigation Drawer & Academic Contact Form Validation
- * Student: Mudavath Hemavardhan (2403A51421)
+ * Student: Mudavath Hemavardhan (2403A51422)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
