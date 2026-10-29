@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D2B45"/>
+      <stop offset="100%" stop-color="#023E8A"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00B4D8"/>
+      <stop offset="100%" stop-color="#90E0EF"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="24" fill="url(#bgGrad)"/>
+  <!-- Circuit grid lines -->
+  <path d="M50 100 H200 V180 H350" stroke="#0077B6" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M400 80 V220 H520" stroke="#0077B6" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M120 320 H280 V240 H450" stroke="#0077B6" stroke-width="2" stroke-dasharray="4 4"/>
+  <!-- Central Terminal Screen -->
+  <rect x="140" y="80" width="320" height="220" rx="14" fill="#03045E" stroke="#00B4D8" stroke-width="3"/>
+  <rect x="140" y="80" width="320" height="34" rx="14" fill="#0077B6"/>
+  <circle cx="165" cy="97" r="5" fill="#FF5F56"/>
+  <circle cx="180" cy="97" r="5" fill="#FFBD2E"/>
+  <circle cx="195" cy="97" r="5" fill="#27C93F"/>
+  <text x="220" y="102" fill="#FFFFFF" font-family="monospace" font-size="12">cse@sru-terminal:~$</text>
+  <!-- Code text -->
+  <text x="160" y="145" fill="#00B4D8" font-family="monospace" font-size="13">&gt; Initializing CSE AI &amp; Cloud Labs...</text>
+  <text x="160" y="175" fill="#48BB78" font-family="monospace" font-size="13">&gt; Status: 100% Operational</text>
+  <text x="160" y="205" fill="#D4AF37" font-family="monospace" font-size="13">&gt; Research Focus: AI, Cloud, Sec</text>
+  <text x="160" y="235" fill="#E2E8F0" font-family="monospace" font-size="13">&gt; Ready for Innovation [OK]</text>
+  <!-- Screen Stand -->
+  <path d="M260 300 L240 340 H360 L340 300 Z" fill="#0077B6"/>
+  <rect x="210" y="340" width="180" height="12" rx="6" fill="#D4AF37"/>
+</svg>
