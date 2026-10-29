@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SESD Assignment 3 — CSE Department Website Report</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm;
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1E293B;
+    line-height: 1.6;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 20px;
+  }
+  .cover-card {
+    border: 2px solid #0D2B45;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 40px;
+    background-color: #F8FAFC;
+    text-align: center;
+    page-break-after: always;
+  }
+  .univ-header {
+    font-size: 24pt;
+    font-weight: 800;
+    color: #0D2B45;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .dept-header {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #023E8A;
+    margin-bottom: 2px;
+  }
+  .school-header {
+    font-size: 11pt;
+    color: #64748B;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .academic-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    text-align: left;
+  }
+  .academic-table th, .academic-table td {
+    border: 1px solid #CBD5E1;
+    padding: 8px 12px;
+  }
+  .academic-table th {
+    background-color: #E2E8F0;
+    color: #1E293B;
+    font-weight: 600;
+  }
+  .report-title-box {
+    margin: 28px 0;
+    padding: 20px;
+    background-color: #0D2B45;
+    color: #FFFFFF;
+    border-radius: 6px;
+  }
+  .report-title-box h1 {
+    font-size: 16pt;
+    margin: 0 0 8px 0;
+    color: #FDE047;
+  }
+  .report-title-box p {
+    font-size: 11pt;
+    margin: 0;
+  }
+  .student-box {
+    margin: 25px auto;
+    width: 85%;
+    border: 1px solid #023E8A;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding: 16px;
+    text-align: left;
+    font-size: 10.5pt;
+  }
+  .student-box table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .student-box td {
+    padding: 5px 8px;
+  }
+  .student-box td.label {
+    font-weight: bold;
+    color: #0D2B45;
+    width: 38%;
+  }
+  h2 {
+    color: #0D2B45;
+    border-bottom: 2px solid #0077B6;
+    padding-bottom: 6px;
+    margin-top: 35px;
+    font-size: 14pt;
+  }
+  h3 {
+    color: #023E8A;
+    margin-top: 20px;
+    font-size: 12pt;
+  }
+  p, li {
+    font-size: 10pt;
+    color: #334155;
+  }
+  .terminal-box {
+    background-color: #0F172A;
+    color: #E2E8F0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 9pt;
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin: 12px 0 18px;
+    border-left: 4px solid #00B4D8;
+    overflow-x: auto;
+    line-height: 1.45;
+  }
+  .terminal-box .cmd {
+    color: #4ADE80;
+    font-weight: bold;
+  }
+  .terminal-box .conflict {
+    color: #F87171;
+    font-weight: bold;
+  }
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 9pt;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #CBD5E1;
+    padding: 8px 10px;
+    text-align: left;
+  }
+  table.data-table th {
+    background-color: #0D2B45;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  table.data-table tr:nth-child(even) {
+    background-color: #F8FAFC;
+  }
+  .callout-box {
+    background-color: #EFF6FF;
+    border-left: 4px solid #2563EB;
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-size: 9.5pt;
+    border-radius: 0 4px 4px 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- Academic Cover Page -->
+<div class="cover-card">
+  <div class="univ-header">SR UNIVERSITY</div>
+  <div class="dept-header">DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</div>
+  <div class="school-header">School of Computer Science & Artificial Intelligence</div>
+
+  <table class="academic-table">
+    <tr>
+      <td><strong>Program:</strong> B.Tech (CSE)</td>
+      <td><strong>Academic Year:</strong> 2026–27</td>
+      <td><strong>Regulation:</strong> R24</td>
+    </tr>
+    <tr>
+      <td><strong>Course Title:</strong> Software Engineering & System Design</td>
+      <td><strong>Course Code:</strong> 24CS301PC311</td>
+      <td><strong>Year / Semester:</strong> III / I SEM</td>
+    </tr>
+    <tr>
+      <td><strong>Assignment Number:</strong> 03 / 12</td>
+      <td><strong>Assignment Type:</strong> Lab / Recitation</td>
+      <td><strong>Applicable Batches:</strong> ALL</td>
+    </tr>
+  </table>
+
+  <div class="report-title-box">
+    <h1>SESD LAB ASSIGNMENT 03 REPORT</h1>
+    <p><strong>CSE Department Website — Git & GitHub Version Control and Deployment</strong></p>
+  </div>
+
+  <div class="student-box">
+    <table>
+      <tr>
+        <td class="label">Student Name:</td>
+        <td><strong>Mudavath Hemavardhan</strong></td>
+      </tr>
+      <tr>
+        <td class="label">Hall Ticket Number / HT No.:</td>
+        <td><strong>2403A51421</strong></td>
+      </tr>
+      <tr>
+        <td class="label">Batch:</td>
+        <td><strong>Batch 16</strong></td>
+      </tr>
+      <tr>
+        <td class="label">Department:</td>
+        <td>Computer Science and Engineering</td>
+      </tr>
+      <tr>
+        <td class="label">Institution:</td>
+        <td>SR University, Warangal / Hyderabad, Telangana</td>
+      </tr>
+      <tr>
+        <td class="label">Submission Date:</td>
+        <td>October 29, 2026</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Section 1 -->
+<h2>1. Aim & Objectives</h2>
+<p><strong>Aim:</strong> To design, develop, version-control, and deploy a responsive multi-page <strong>CSE Department Website</strong> using standard Git distributed version control operations, simulate and resolve an intentional three-way merge conflict, and publish the live web application on <strong>GitHub Pages</strong>.</p>
+
+<p><strong>Learning Objectives:</strong></p>
+<ul>
+  <li>Master essential Git command primitives: <code>git init</code>, <code>git config</code>, <code>git status</code>, <code>git add</code>, <code>git commit</code>, <code>git log</code>, <code>git remote</code>, <code>git push</code>, and <code>git pull</code>.</li>
+  <li>Implement branch isolation workflows (<code>git branch</code>, <code>git checkout</code>, <code>git merge</code>).</li>
+  <li>Reproduce, diagnose, and cleanly resolve a real Git merge conflict on <code>index.html</code>.</li>
+  <li>Deploy a static website to cloud infrastructure using <strong>GitHub Pages</strong>.</li>
+  <li>Structure professional, submission-grade engineering documentation.</li>
+</ul>
+
+<!-- Section 2 -->
+<h2>2. Problem Statement & Architecture</h2>
+<p>Modern engineering education requires students to demonstrate both frontend web design competencies and distributed team version control hygiene. The Department of Computer Science & Engineering requires an official academic website presenting its departmental vision, faculty directory, and contact facilities.</p>
+
+<p>The project consists of three core pages sharing a unified CSS stylesheet and JavaScript validation engine:</p>
+<ol>
+  <li><strong>Home Page (<code>index.html</code>):</strong> Department overview, academic excellence badge, and research focus pillars (AI, Cyber Security, Data Science, Software Systems).</li>
+  <li><strong>Faculty Directory (<code>faculty.html</code>):</strong> Official tabular directory of professors, designations, and research specializations, paired with responsive cards.</li>
+  <li><strong>Contact Page (<code>contact.html</code>):</strong> Department email, campus address, telephone, and an inquiry form with client-side JavaScript validation.</li>
+</ol>
+
+<!-- Section 3 -->
+<h2>3. Git Version Control Workflow Execution</h2>
+
+<h3>3.1 Initialization and Author Identity Configuration</h3>
+<div class="terminal-box">
+<span class="cmd">$ git init</span>
+Initialized empty Git repository in sesd-assignment-3-cse-website/.git/
+
+<span class="cmd">$ git config user.name "Mudavath Hemavardhan"</span>
+<span class="cmd">$ git config user.email "2403a51421@sru.edu.in"</span>
+<span class="cmd">$ git branch -M main</span>
+</div>
+
+<h3>3.2 Staging and Incremental Semantic Commits</h3>
+<div class="terminal-box">
+<span class="cmd"># Commit 1: Repository initialization</span>
+$ git add .gitignore
+$ git commit -m "chore: initialize SESD assignment repository"
+[main (root-commit) 6ea08d1] chore: initialize SESD assignment repository
+
+<span class="cmd"># Commit 2: Home page implementation</span>
+$ git add index.html assets/
+$ git commit -m "feat: create CSE department home page"
+[main 71204f9] feat: create CSE department home page
+
+<span class="cmd"># Commit 3: Faculty and Contact pages</span>
+$ git add faculty.html contact.html
+$ git commit -m "feat: add faculty and contact pages"
+[main 85dccf1] feat: add faculty and contact pages
+
+<span class="cmd"># Commit 4: Responsive styling and scripts</span>
+$ git add css/ js/
+$ git commit -m "style: implement responsive department website"
+[main d158f25] style: implement responsive department website
+
+<span class="cmd"># Commit 5: Verification and testing</span>
+$ git add test_website.py
+$ git commit -m "test: verify navigation and responsive layout"
+[main 3f8fb37] test: verify navigation and responsive layout
+</div>
+
+<h3>3.3 Feature Branching and Merge Conflict Resolution</h3>
+<p>To demonstrate collaborative branch conflict handling as illustrated in the reference material:</p>
+<ol>
+  <li>Created branch <code>feature/home-update</code>: Updated hero heading to <em>"Welcome to the CSE Department — SR University"</em>. Committed.</li>
+  <li>Created branch <code>feature/home-design</code>: Updated the same line to <em>"Welcome to Computer Science &amp; Engineering"</em>. Committed.</li>
+  <li>Merged <code>feature/home-update</code> into <code>main</code> (fast-forward).</li>
+  <li>Merged <code>feature/home-design</code> into <code>main</code> &rarr; Triggered merge conflict:</li>
+</ol>
+
+<div class="terminal-box">
+<span class="cmd">$ git merge feature/home-design</span>
+Auto-merging index.html
+<span class="conflict">CONFLICT (content): Merge conflict in index.html</span>
+Automatic merge failed; fix conflicts and then commit the result.
+
+<span class="cmd">$ git diff</span>
+diff --cc index.html
+@@@ -50,7 -50,7 +50,11 @@@
+        &lt;div class="container hero-grid"&gt;
+          &lt;div class="hero-text"&gt;
+            &lt;span class="badge"&gt;Centre of Academic Excellence&lt;/span&gt;
+<span class="conflict">++&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span>
+<span class="conflict">+          &lt;h1 class="hero-heading" id="heroHeadline"&gt;Welcome to the CSE Department — SR University&lt;/h1&gt;</span>
+<span class="conflict">++=======</span>
+<span class="conflict">+          &lt;h1 class="hero-heading" id="heroHeadline"&gt;Welcome to Computer Science &amp; Engineering&lt;/h1&gt;</span>
+<span class="conflict">++&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature/home-design</span>
+</div>
+
+<p><strong>Conflict Resolution:</strong> Harmonized both updates into: <em>"Welcome to the Department of Computer Science &amp; Engineering — SR University"</em>, removed conflict markers, and committed the resolution.</p>
+
+<div class="terminal-box">
+<span class="cmd">$ git add index.html</span>
+<span class="cmd">$ git commit -m "fix: resolve merge conflict in home page heading"</span>
+[main 658d9e1] fix: resolve merge conflict in home page heading
+</div>
+
+<h3>3.4 Final Commit History Graph</h3>
+<div class="terminal-box">
+<span class="cmd">$ git log --graph --oneline</span>
+*   658d9e1 (HEAD -&gt; main) fix: resolve merge conflict in home page heading
+|\  
+| * 3b88926 (feature/home-design) style: refine hero headline for concise typography
+* | a4487d2 (feature/home-update) feat: update department hero headline for institutional branding
+|/  
+* 3f8fb37 test: verify navigation and responsive layout
+* d158f25 style: implement responsive department website
+* 85dccf1 feat: add faculty and contact pages
+* 71204f9 feat: create CSE department home page
+* 6ea08d1 chore: initialize SESD assignment repository
+</div>
+
+<!-- Section 4 -->
+<h2>4. GitHub Remote Synchronization & GitHub Pages Deployment</h2>
+<div class="terminal-box">
+<span class="cmd"># Add remote GitHub repository</span>
+$ git remote add origin https://github.com/Mhemavardhan/sesd-assignment-3-cse-website.git
+
+<span class="cmd"># Push main branch and feature branches</span>
+$ git push -u origin main
+$ git push origin feature/home-update feature/home-design
+</div>
+
+<p><strong>GitHub Pages Deployment Steps:</strong></p>
+<ol>
+  <li>Navigate to repository <strong>Settings &rarr; Pages</strong>.</li>
+  <li>Under <strong>Build and deployment &rarr; Source</strong>, choose <strong>Deploy from a branch</strong>.</li>
+  <li>Select branch <code>main</code> and folder <code>/ (root)</code>.</li>
+  <li>Click <strong>Save</strong> and wait for the deployment workflow to finish.</li>
+  <li>Website is live at: <strong>https://mhemavardhan.github.io/sesd-assignment-3-cse-website/</strong></li>
+</ol>
+
+<!-- Section 5 -->
+<h2>5. Official 5–6 Line Git Workflow Summary</h2>
+<div class="callout-box">
+<p>1. Local Git repository was initialized with <code>git init</code> and configured with student identity via <code>git config</code>.<br>
+2. Changes were staged with <code>git add .</code> and tracked across incremental semantic commits using <code>git commit -m</code>.<br>
+3. Parallel feature branches were created using <code>git checkout -b</code> to build enhancements in full isolation.<br>
+4. A three-way merge conflict was simulated, inspected via <code>git diff</code> conflict markers, and resolved cleanly in <code>index.html</code>.<br>
+5. The repository was connected to GitHub using <code>git remote add origin</code>, synchronized with <code>git push</code>, and published live via <strong>GitHub Pages</strong>.</p>
+</div>
+
+<!-- Section 6 -->
+<h2>6. Common Git Commands Reference Table (20 Commands)</h2>
+<table class="data-table">
+  <tr>
+    <th style="width: 6%;">S.No</th>
+    <th style="width: 22%;">Command</th>
+    <th style="width: 32%;">Syntax</th>
+    <th style="width: 40%;">Purpose / Description</th>
+  </tr>
+  <tr><td>1</td><td>Initialize Repository</td><td><code>git init</code></td><td>Creates a new local Git repository in the current folder</td></tr>
+  <tr><td>2</td><td>Check Status</td><td><code>git status</code></td><td>Shows status of working directory and staging area</td></tr>
+  <tr><td>3</td><td>Configure Username</td><td><code>git config user.name "Name"</code></td><td>Sets author username for Git commits</td></tr>
+  <tr><td>4</td><td>Configure Email</td><td><code>git config user.email "email"</code></td><td>Sets author email for Git commits</td></tr>
+  <tr><td>5</td><td>Add to Staging</td><td><code>git add .</code></td><td>Adds modified files to staging area</td></tr>
+  <tr><td>6</td><td>Commit Changes</td><td><code>git commit -m "Message"</code></td><td>Permanently records staged snapshot</td></tr>
+  <tr><td>7</td><td>View Commit Log</td><td><code>git log --oneline</code></td><td>Displays commit history list</td></tr>
+  <tr><td>8</td><td>Create Branch</td><td><code>git branch branch_name</code></td><td>Creates a new isolated branch</td></tr>
+  <tr><td>9</td><td>Switch Branch</td><td><code>git checkout branch_name</code></td><td>Switches working directory to specified branch</td></tr>
+  <tr><td>10</td><td>Rename Branch</td><td><code>git branch -M main</code></td><td>Renames current branch</td></tr>
+  <tr><td>11</td><td>Merge Branch</td><td><code>git merge branch_name</code></td><td>Integrates branch changes into current branch</td></tr>
+  <tr><td>12</td><td>Add Remote</td><td><code>git remote add origin URL</code></td><td>Links local repository to remote GitHub repository</td></tr>
+  <tr><td>13</td><td>Push to Remote</td><td><code>git push -u origin main</code></td><td>Uploads local commits and sets upstream tracking</td></tr>
+  <tr><td>14</td><td>Push Updates</td><td><code>git push</code></td><td>Pushes subsequent commits to remote</td></tr>
+  <tr><td>15</td><td>Pull from Remote</td><td><code>git pull</code></td><td>Fetches and merges changes from remote</td></tr>
+  <tr><td>16</td><td>Clone Repository</td><td><code>git clone URL</code></td><td>Copies remote repository to local machine</td></tr>
+  <tr><td>17</td><td>Delete Branch</td><td><code>git branch -d branch_name</code></td><td>Deletes a merged local branch</td></tr>
+  <tr><td>18</td><td>Show Changes</td><td><code>git diff</code></td><td>Shows unstaged differences from last commit</td></tr>
+  <tr><td>19</td><td>Revert Commit</td><td><code>git revert commit_id</code></td><td>Creates a new commit undoing previous commit</td></tr>
+  <tr><td>20</td><td>Reset Hard</td><td><code>git reset --hard HEAD</code></td><td>Discards uncommitted working changes permanently</td></tr>
+</table>
+
+<h2>7. Results and Conclusion</h2>
+<p>The <strong>CSE Department Website</strong> project for SESD Assignment 3 was successfully built, version-controlled, tested, and documented. All required Git operations including repository initialization, branching, merge conflict resolution, and cloud deployment on GitHub Pages were executed and verified.</p>
+</body>
+</html>
