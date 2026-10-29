@@ -1,0 +1,15 @@
+# Operating System Artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE and Editor Files
+.vscode/
+.idea/
+
+# Node / Build artifacts
+node_modules/
+dist/
+build/
+*.log
