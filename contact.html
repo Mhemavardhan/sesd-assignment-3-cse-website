@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact the Department of Computer Science and Engineering, SR University.">
+  <title>Contact Us — Department of Computer Science & Engineering</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- University & Department Header -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <span>SR UNIVERSITY &bull; School of Computer Science &amp; AI</span>
+        <span>SESD Lab Assignment 03/12</span>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="container header-container">
+        <a href="index.html" class="brand">
+          <img src="assets/images/logo.svg" alt="SR University CSE Logo" class="brand-logo" width="46" height="46">
+          <div class="brand-text">
+            <span class="dept-title">Computer Science and Engineering</span>
+            <span class="univ-sub">SR University, Warangal</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Contact Hero Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <span class="badge">Get in Touch</span>
+        <h1 class="page-title">Contact Us</h1>
+        <p class="page-subtitle">We welcome inquiries regarding admissions, research collaborations, student projects, and academic events.</p>
+      </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="content-section">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Official Reference Department Info Card -->
+          <div class="contact-info-card">
+            <div class="section-title-wrap">
+              <h2 class="section-heading">Department Information</h2>
+              <div class="heading-line"></div>
+            </div>
+
+            <div class="info-block">
+              <span class="info-icon">🏛️</span>
+              <div>
+                <strong>Department:</strong>
+                <p>Computer Science and Engineering</p>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <span class="info-icon">✉️</span>
+              <div>
+                <strong>Email:</strong>
+                <p><a href="mailto:cse@college.edu">cse@college.edu</a> / <a href="mailto:cse@sru.edu.in">cse@sru.edu.in</a></p>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <span class="info-icon">📞</span>
+              <div>
+                <strong>Phone:</strong>
+                <p><a href="tel:9876543210">9876543210</a></p>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <span class="info-icon">📍</span>
+              <div>
+                <strong>Address:</strong>
+                <p>College Campus, Telangana<br>SR University Campus, Ananthasagar, Warangal, Telangana — 506371</p>
+              </div>
+            </div>
+
+            <div class="back-nav-box" style="margin-top: 28px;">
+              <a href="index.html" class="back-link">&larr; Home</a>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-card">
+            <h3>Send an Academic Inquiry</h3>
+            <p class="form-desc">Fill out the form below. Client-side validation ensures all fields are formatted properly.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="senderName">Full Name <span class="required">*</span></label>
+                <input type="text" id="senderName" name="senderName" placeholder="e.g. Mudavath Hemavardhan" required>
+                <span class="form-error" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail">Email Address <span class="required">*</span></label>
+                <input type="email" id="senderEmail" name="senderEmail" placeholder="e.g. 2403a51421@sru.edu.in" required>
+                <span class="form-error" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="inquirySubject">Inquiry Category <span class="required">*</span></label>
+                <select id="inquirySubject" name="inquirySubject" required>
+                  <option value="" disabled selected>Select Inquiry Type</option>
+                  <option value="Academic Curriculum">Academic Curriculum &amp; Syllabi</option>
+                  <option value="Faculty Consultation">Faculty Mentorship / Project Consultation</option>
+                  <option value="SESD Lab Assignment">SESD Lab Assignment 3 Feedback</option>
+                  <option value="Research & Publications">Research &amp; Innovation Labs</option>
+                </select>
+                <span class="form-error" id="subjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage">Message <span class="required">*</span></label>
+                <textarea id="senderMessage" name="senderMessage" rows="4" placeholder="Type your academic inquiry or message here..." required></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Send Inquiry</button>
+            </form>
+
+            <div class="form-success-banner" id="formSuccess">
+              <span class="success-icon">✓</span>
+              <div>
+                <strong>Message Sent Successfully!</strong>
+                <p>Thank you for contacting the Department of Computer Science &amp; Engineering. Your inquiry reference has been generated.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h4>Department of CSE</h4>
+        <p>SR University, Ananthasagar, Hasanparthy, Warangal, Telangana — 506371.</p>
+        <p>&copy; 2026 Department of Computer Science and Engineering. All rights reserved.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faculty.html">Faculty Directory</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col student-meta">
+        <h4>Academic Project Details</h4>
+        <p><strong>Course:</strong> Software Engineering &amp; System Design (24CS301PC311)</p>
+        <p><strong>Student Name:</strong> Mudavath Hemavardhan</p>
+        <p><strong>Hall Ticket No.:</strong> 2403A51421</p>
+        <p><strong>Assignment:</strong> SESD Assignment 03/12</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
